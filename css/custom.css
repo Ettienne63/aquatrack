@@ -1,0 +1,121 @@
+body{
+    background: linear-gradient(180deg,#eefafa 0%, #f8fbfc 100%);
+    color: #12343b;
+    min-height: 100vh;
+}
+.navbar{
+    border-bottom: 1px solid #d8eeee;
+    background-color:rgba(255, 255, 255, 0.9) !important; 
+    backdrop-filter: blur(8px);
+}
+.navbar-brand{
+    font-weight: 700;
+    color: #0f6b6d;
+}
+.app-hero{
+    padding:1.5rem;
+    border-radius: 20px;
+    background:linear-gradient(135deg, #0f8b8d, #35b7b9);
+    color: white;
+    box-shadow:0 12px 28px rgba(15, 107, 109, 0.18);
+}
+.app-hero h1{
+    color: white;
+    margin-bottom: 0.25rem;
+}
+
+.app-hero p{
+    color:rgba(255, 255, 255, 0.85) !important;
+    margin-bottom: 0;
+}
+
+h1{
+    font-weight: 700;
+    color: #12343b;
+}
+
+.card{
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(15,107,109,0.08);
+}
+.dashboard-card{
+    border: none;
+    border-radius: 20px;
+}
+
+.tank-status-card{
+    border-left: 6px solid #0f8b8d;
+}
+
+.card-title{
+    color: #0f6b6d;
+    font-weight: 700;
+}
+
+.stat-card{
+    height: 100%;
+    background: #ffffff;
+    transition:transform 0.15s ease,box-shadow 0.15s ease;
+}
+
+.stat-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(15, 107, 109, 0.12);
+}
+.stat-card .card-title{
+    font-size: 0.9rem;
+    color:#5f7f83;
+    margin-bottom: 0.75rem;
+}
+.stat-card span[id$="reading"]{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0f6b6d;
+    margin-top: 0.35rem;
+}
+.btn{
+    border-radius:12px;
+    font-weight: 600;
+}
+.btn-primary{
+    background-color: #0f8b8d;
+    border-color:#0f8b8d ;
+}
+
+.btn-primary:hover {
+  background-color: #0c7476;
+  border-color: #0c7476; ;
+}
+.form-control,
+.form-select{
+    border-radius: 12px;
+    border-color: #d8eeee;
+}
+.form-control:focus,
+.form-select:focus{
+    border-color: #0f8b8d;
+    box-shadow:0 0 0 0.2rem rgba(15, 139, 141, 0.15) ;
+}
+.list-group-item{
+    border:none;
+    border-radius: 14px;
+    margin-bottom: 12px;
+   box-shadow: 0 4px 14px rgba(15, 107, 109, 0.06);
+}
+
+.badge{
+    border-radius: 999px;
+    padding: 0.5rem 0.75rem;
+}
+
+@media (max-width: 768px){
+    .app-hero{
+        padding: 1.25rem;
+    }
+    
+    .card{
+        border-radius: 16px;
+    }
+}

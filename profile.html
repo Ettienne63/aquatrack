@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AquaLog</a>
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-link">Dashboard</a>
+                <a href="add-reading.html" class="nav-link">Add Reading</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container py-4">
+        <section class="app-hero mb-4">
+            <h1>Tank Profile</h1>
+            <p class="text-muted">
+                Manage your aquarium details, size, start date and tank type
+            </p>
+        </section>
+
+        <section class="mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="h5 card-title"> Current Tank Profile</h2>
+                    <p class="text-muted small mb-0">
+                        Your saved aquarium setup details.
+                    </p>
+
+                    <div class="row g-3">
+
+                        <div class="col-md-4 col-6">
+                            <div class="card stat-card h-100">
+                                <div class="card-body">
+                                    <div class="text-muted small">Tank Name</div>
+                                    <span id="display-tank-name">No Profile Yet</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-6">
+                            <div class="stat-card card h-100">
+                                <div class="card-body">
+                                    <div class="text-muted small">Size</div>
+                                    <span id="display-tank-size">No size yet</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-6">
+                            <div class="stat-card card h-100">
+                                <div class="card-body">
+                                    <div class="text-muted small">Volume</div>
+                                    <span id="display-tank-volume">No volume yet</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-6">
+                            <div class="stat-card card h-100">
+                                <div class="card-body">
+                                    <div class="text-muted small">Started</div>
+                                    <span id="display-creation-date">No date yet</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-6">
+                            <div class="stat-card card h-100">
+                                <div class="card-body">
+                                    <div class="text-muted small">Tank Type</div>
+                                    <span id="display-tank-type">No type selected yet</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="h5 card-title">Edit Tank Profile</h2>
+                    <p>Update your tank details whenever your setup changes</p>
+                    <form action="" id="profile-form">
+
+                        <div class="mb-3">
+                            <label for="tankName" class="form-label">Tank Name</label>
+                            <input type="text" class="form-control" id="tankName" placeholder="Nano Nature">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tankLength" class="form-label">Tank Length (cm)</label>
+                            <input type="text" class="form-control" id="tankLength" step="0.1" placeholder="50">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tankWidth" class="form-label">Tank Width (cm)</label>
+                            <input type="number" class="form-control" id="tankWidth" step="0.1" placeholder="25">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tankHeight" class="form-label">Tank Height (cm)</label>
+                            <input type="number" class="form-control" id="tankHeight" step="0.1" placeholder="25.5">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tankVolume" class="form-label">Tank Volume (L)</label>
+                            <input type="number" class="form-control" id="tankVolume" step="0.1" placeholder="32">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="creationDate" class="form-label">Tank Start Date</label>
+                            <input type="date" class="form-control" id="creationDate">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="tankType" class="form-label">Tank Type</label>
+                            <select class="form-select" id="tankType">
+                                <option value="">Select tank type</option>
+                                <option value="Freshwater Community">Freshwater Community</option>
+                                <option value="Planted Nano Tank">Planted Nano Tank</option>
+                                <option value="Aquascape">Aquascape</option>
+                                <option value="Shrimp Tank">Shrimp Tank</option>
+                                <option value="Betta Tank">Betta Tank</option>
+                                <option value="Quarantine Tank">Quarantine Tank</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary" id="save-profile-btn">Save Profile Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/config/config.js"></script>
+    <script src="js/storage/storage.js"></script>
+    <script src="js/validation/profile-validation.js"></script>
+    <script src="js/pages/profile.js"></script>
+</body>
+
+</html>
