@@ -5,6 +5,48 @@ AquaTrack is a responsive web application designed to help aquarium hobbyists mo
 The application provides a clean dashboard that displays the latest tank status, maintenance reminders, historical readings, statistics, and parameter trends to help users make informed decisions about their aquarium.
 
 ---
+## Live Demo
+
+[Launch AquaTrack](https://ettienne-aquatrack.netlify.app/)
+
+---
+
+##  Screenshots
+
+### Dashboard
+
+The dashboard provides a complete overview of the aquarium, including the latest readings, tank health, dashboard alerts, maintenance reminders, and recommendations.
+
+![Dashboard](assets/images/dashboard/1.%20Main-Dashboard_Alerts_Latest_Reading_1.png)
+![Reading History](assets/images/dashboard/2.%20Readings-History_Stats_Section_2.png)
+![Parameter Trends](assets/images/dashboard/3.%20Parameter_Trend_Section.png)
+
+---
+
+### Add Reading
+
+Quickly record new water parameter readings for your aquarium.
+
+![Add Reading](assets/images/add-Readings/Add_Readings_Form.png)
+
+---
+
+### Edit Reading
+
+Update existing readings whenever new measurements need correction.
+
+![Edit Reading](assets/images/edit-Readings/Edit_Readings_form.png)
+
+---
+
+### Tank Profile
+
+Store important information about your aquarium including dimensions, volume, setup date and tank type.
+
+![Tank Profile](assets/images/tank-Profile/Hero_Tank_Profile.png)
+![Tank Profile Form](assets/images/tank-Profile/Tank_Profile_Form.png)
+
+---
 
 ## Features
 
@@ -108,11 +150,18 @@ Planned features include:
 
 ---
 
-## Screenshots
+## What I Learned
 
-Screenshots will be added after deployment.
+Building AquaTrack helped me strengthen my understanding of:
 
----
+- Modular JavaScript architecture
+- DOM manipulation
+- LocalStorage for client-side persistence
+- Form validation
+- Responsive design with Bootstrap
+- Data visualization using Chart.js
+- Organizing larger front-end projects into maintainable modules
+- Using Git, GitHub, and Netlify to manage and deploy a web application
 
 ## Author
 
